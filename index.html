@@ -8,14 +8,14 @@
   <body>
     <main>
       <section class="form-wrapper">
+        <div class="image">
+          <img src="./images/vault.svg" alt="">
+        </div>
         <form class="form" name="signupForm" method="post">
           <fieldset class="field">
             <input type="text" name="fullname" placeholder="Full name"/>
           </fieldset>
-          <fieldset class="field">
-            <input type="text" name="email" placeholder="Email address"/>
-          </fieldset>
-          <fieldset class="field">
+          <fieldset class="field bottom-spacer">
             <div class="select-box">
               <select name="country">
                 <option value="-1" default selected hidden>Choose country</option>
@@ -25,8 +25,18 @@
               </select>
             </div>
           </fieldset>
+
           <fieldset class="field">
-            <input type="submit" class="submit-button" value="Submit" />
+            <input type="text" name="email" placeholder="Email address"/>
+          </fieldset>
+          <fieldset class="field">
+            <input type="text" name="password" placeholder="Password"/>
+          </fieldset>
+          <fieldset class="field bottom-spacer">
+            <input type="text" name="confirm_password" placeholder="Confirm password"/>
+          </fieldset>
+          <fieldset class="field text-centered">
+            <input type="submit" class="submit-button" value="Register" />
           </fieldset>
         </form>
       </section>
